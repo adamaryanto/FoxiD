@@ -1,0 +1,132 @@
+.hero {
+    min-height: 90vh;
+    /* Almost full screen but leaving space for scroll hint if needed */
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: var(--header-height);
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+}
+
+.headline {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: var(--spacing-4);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.highlight {
+    background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent-primary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* Typing Effect Styles */
+.typingContainer {
+    display: inline-flex;
+    align-items: center;
+}
+
+.cursor {
+    display: inline-block;
+    width: 4px;
+    /* Slightly thicker for visibility */
+    background-color: var(--accent-primary);
+    margin-left: 4px;
+    animation: blink 1s step-end infinite;
+    font-weight: 200;
+    /* Thin for text-pipe fallback vertical alignment if using text */
+    color: var(--accent-primary);
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.subtext {
+    font-size: var(--text-xl);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-8);
+    max-width: 600px;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: var(--spacing-4);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: var(--text-base);
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btnPrimary {
+    background-color: var(--accent-primary);
+    color: white;
+    box-shadow: 0 4px 14px 0 rgba(249, 115, 22, 0.39);
+}
+
+.btnPrimary:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.23);
+}
+
+.btnSecondary {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--text-secondary);
+}
+
+.btnSecondary:hover {
+    border-color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+    transition: transform 0.2s ease-out;
+    /* For mouse movement parallax integration if added later */
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 3rem;
+    }
+
+    .ctaGroup {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

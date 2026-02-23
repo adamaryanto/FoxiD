@@ -1,0 +1,59 @@
+:root {
+  /* Colors */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-primary: #f97316; /* Orange-500 */
+  --accent-hover: #ea580c;   /* Orange-600 */
+  --accent-glow: rgba(249, 115, 22, 0.5);
+
+  /* Typography */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-4xl: 2.25rem;
+  --text-6xl: 3.75rem;
+
+  /* Spacing */
+  --spacing-4: 1rem;
+  --spacing-8: 2rem;
+  --spacing-16: 4rem;
+
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
