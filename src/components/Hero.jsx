@@ -5,12 +5,12 @@ const Hero = () => {
         <section className={styles.hero}>
             <div className={`container ${styles.content}`}>
                 <h1 className={`${styles.headline} reveal`}>
-                    Bikin & Beresin Sistem Web <br />
-                    <span className={styles.highlight}>Sat-set, Rapi, Langsung Jadi.</span>
+                    Solusi Web Development Profesional <br />
+                    <span className={styles.highlight}>untuk Segala Kebutuhan.</span>
                 </h1>
 
                 <p className={`${styles.subtext} reveal delay-100`}>
-                    Solusi buat kamu yang mau bangun atau benerin website tugas, UMKM, sampe sistem internal.
+                    Spesialis pembuatan sistem web kustom untuk tugas akademik, digitalisasi UMKM, dan optimalisasi sistem internal perusahaan.
                 </p>
 
                 <div className={`${styles.ctaGroup} reveal delay-200`}>
