@@ -14,9 +14,9 @@ const Hero = () => {
                 </p>
 
                 <div className={`${styles.ctaGroup} reveal delay-200`}>
-                    <button className={`${styles.btn} ${styles.btnPrimary}`}>
+                    <a href="#projects" className={`${styles.btn} ${styles.btnPrimary}`}>
                         Lihat Project
-                    </button>
+                    </a>
                     <a href="https://wa.me/6281319433662" target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btnSecondary}`}>
                         Hire Me
                     </a>
