@@ -8,7 +8,7 @@ const projects = [
     {
         id: 1,
         title: 'Web Inventaris',
-        description: 'Sistem manajemen inventaris barang berbasis web untuk memantau stok, kategori, dan transaksi barang secara real-time.',
+        description: 'Sistem manajemen inventaris barang berbasis web. Demo - Admin: asep@gmail.com (12345678), User: user@gmail.com (12345678).',
         tags: ['Laravel', 'MySQL', 'Tailwind'],
         link: 'https://gudangkita.adamariyanto.my.id/',
         github: '#',
@@ -17,7 +17,7 @@ const projects = [
     {
         id: 2,
         title: 'PadelHub',
-        description: 'Sistem penyewaan lapangan padel online yang memudahkan pengguna untuk membooking lapangan dan mengelola jadwal pertandingan.',
+        description: 'Sistem penyewaan lapangan padel online. Demo - Admin: admin@padel.com (password), Customer: customer@padel.com (password).',
         tags: ['Laravel', 'MySQL', 'Bootstrap'],
         link: 'https://padelhub.adamariyanto.my.id/',
         github: '#',
