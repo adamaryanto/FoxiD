@@ -8,7 +8,11 @@ const projects = [
     {
         id: 1,
         title: 'Web Inventaris',
-        description: 'Sistem manajemen inventaris barang berbasis web. Demo - Admin: asep@gmail.com (12345678), User: user@gmail.com (12345678).',
+        description: 'Sistem manajemen inventaris barang berbasis web untuk memantau stok, kategori, dan transaksi barang secara real-time.',
+        credentials: [
+            { label: 'Admin', email: 'admin@gmail.com', pass: '12345678' },
+            { label: 'User', email: 'user@gmail.com', pass: '12345678' }
+        ],
         tags: ['Laravel', 'MySQL', 'Tailwind'],
         link: 'https://gudangkita.adamariyanto.my.id/',
         github: '#',
@@ -17,7 +21,11 @@ const projects = [
     {
         id: 2,
         title: 'PadelHub',
-        description: 'Sistem penyewaan lapangan padel online. Demo - Admin: admin@padel.com (password), Customer: customer@padel.com (password).',
+        description: 'Sistem penyewaan lapangan padel online yang memudahkan pengguna untuk membooking lapangan dan mengelola jadwal pertandingan.',
+        credentials: [
+            { label: 'Admin', email: 'admin@padel.com', pass: 'password' },
+            { label: 'Customer', email: 'customer@padel.com', pass: 'password' }
+        ],
         tags: ['Laravel', 'MySQL', 'Bootstrap'],
         link: 'https://padelhub.adamariyanto.my.id/',
         github: '#',
@@ -57,6 +65,20 @@ const Projects = () => {
                             <div className={styles.cardBody}>
                                 <h3 className={styles.cardTitle}>{project.title}</h3>
                                 <p className={styles.cardDesc}>{project.description}</p>
+
+                                {project.credentials && (
+                                    <div className={styles.credentials}>
+                                        <p className={styles.credTitle}>Demo Akun:</p>
+                                        <ul className={styles.credList}>
+                                            {project.credentials.map((cred, index) => (
+                                                <li key={index} className={styles.credItem}>
+                                                    <strong>{cred.label}:</strong> {cred.email} ({cred.pass})
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+
                                 <div className={styles.tags}>
                                     {project.tags.map(tag => (
                                         <span key={tag} className={styles.tag}>{tag}</span>
