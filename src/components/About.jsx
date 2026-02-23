@@ -6,21 +6,21 @@ const About = () => {
             <div className={`container ${styles.container}`}>
                 <div className={styles.textColumn}>
                     <span className={styles.badge}>Who We Are</span>
-                    <h2 className={styles.title}>About FoxiD</h2>
+                    <h2 className={styles.title}>Seputar FoxiD</h2>
                     <p className={styles.paragraph}>
-                        <span className={styles.brandHighlight}>FoxiD</span> adalah Web Systems Developer yang membantu pembuatan dan perbaikan website berbasis <span className={styles.highlight}>Laravel</span> dan <span className={styles.highlight}>React</span>.
+                        <span className={styles.brandHighlight}>FoxiD</span> adalah teman buat kamu yang butuh sistem web berbasis <span className={styles.highlight}>Laravel</span> atau <span className={styles.highlight}>React</span>.
                     </p>
                     <p className={styles.paragraph}>
-                        Kami fokus membangun sistem yang tidak hanya berjalan dengan baik, tetapi juga memiliki struktur kode yang rapi, performa stabil, dan tampilan antarmuka yang modern.
+                        Nggak cuma asal jalan, saya fokus bikin website yang kodenya rapi, performanya enteng, dan tampilannya enak dilihat.
                     </p>
                     <p className={styles.paragraph}>
-                        Layanan mencakup pembuatan sistem absensi, inventaris, e-learning, dashboard custom, hingga pengembangan website untuk UMKM dan organisasi.
+                        Bisa bantu bikin apa aja—mulai dari sistem absensi, inventaris, e-learning, dashboard custom, sampe landing page buat UMKM.
                     </p>
                     <p className={styles.paragraph}>
-                        Setiap project dikembangkan dengan pendekatan terstruktur, mudah dikembangkan kembali, serta siap digunakan untuk kebutuhan presentasi maupun operasional sehari-hari.
+                        Setiap project digarap serius biar gampang dikembangin lagi dan langsung siap kamu pakai buat kerja atau presentasi.
                     </p>
                     <p className={styles.paragraph}>
-                        Dengan kombinasi clean code dan user experience yang nyaman, FoxiD hadir untuk membantu mewujudkan sistem yang profesional dan sesuai kebutuhan Anda.
+                        Pokoknya, FoxiD hadir biar urusan web kamu jadi lebih simpel dan profesional tanpa ribet.
                     </p>
                 </div>
                 {/* Visual/Image Column */}

@@ -5,12 +5,12 @@ const Hero = () => {
         <section className={styles.hero}>
             <div className={`container ${styles.content}`}>
                 <h1 className={`${styles.headline} reveal`}>
-                    Build & Fix Web Systems <br />
-                    <span className={styles.highlight}>Cepat. Rapi. Siap Pakai.</span>
+                    Bikin & Beresin Sistem Web <br />
+                    <span className={styles.highlight}>Sat-set, Rapi, Langsung Jadi.</span>
                 </h1>
 
                 <p className={`${styles.subtext} reveal delay-100`}>
-                    Menerima pembuatan dan perbaikan website untuk tugas, UMKM, dan sistem internal.
+                    Solusi buat kamu yang mau bangun atau benerin website tugas, UMKM, sampe sistem internal.
                 </p>
 
                 <div className={`${styles.ctaGroup} reveal delay-200`}>
