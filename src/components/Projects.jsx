@@ -15,7 +15,7 @@ const projects = [
         ],
         tags: ['Laravel', 'MySQL', 'Tailwind'],
         link: 'https://gudangkita.adamariyanto.my.id/',
-        github: '#',
+        github: 'http://lynk.id/foxfi72/2jk2kp4px204',
         image: inventarisImg
     },
     {
@@ -86,7 +86,9 @@ const Projects = () => {
                                 </div>
                                 <div className={styles.links}>
                                     <a href={project.link} className={styles.link}>Live Demo</a>
-                                    {/* <a href={project.github} className={styles.link}>GitHub</a> */}
+                                    {project.github && project.github !== '#' && (
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className={styles.link}>Source Code</a>
+                                    )}
                                 </div>
                             </div>
                         </div>
